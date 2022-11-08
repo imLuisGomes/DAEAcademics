@@ -1,0 +1,35 @@
+##### Students
+GET http://localhost:8080/academics/api/students
+Accept: application/json
+###
+
+POST http://localhost:8080/academics/api/students
+Content-Type: application/json
+
+{
+ "email": "johndoe@mail.com",
+ "name": "John Doe",
+ "username": "john",
+ "password": "jd",
+ "courseCode": 1
+}
+
+##### Students/{student}
+GET http://localhost:8080/academics/api/students/Luis
+Accept: application/json
+###
+
+##### Students/{student}/subjects
+GET http://localhost:8080/academics/api/students/Luis/subjects
+Accept: application/json
+###
+
+
+POST http://localhost:8080/academics/api/students/Luis/email/send
+Content-Type: application/json
+
+{
+  "subject": "Teste",
+  "message": "email de teste"
+}
+
